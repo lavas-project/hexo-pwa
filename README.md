@@ -43,7 +43,7 @@ pwa:
 
 - manifest - manifest configuration
 	- path - the path of `manifest.json`, eg: `/manifest.json`
-	- body - the content of `manifest.json`,  [manifest.json example](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+	- body - the content of `manifest.json`,  [manifest.json example](https://developer.mozilla.org/en-US/docs/Web/Manifest), can be empty.
 - serviceWorker - service worker configuration
 	- path: the path of `sw.js`, eg: `/sw.js`
 	- preload - urls or posts that you want to preload
