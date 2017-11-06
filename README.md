@@ -2,7 +2,7 @@
 
 Progressive Web Apps (PWA) plugin for [Hexo](https://hexo.io/).
 
-`hexo-pwa` can let Hexo sites have these two  capabilities.
+`hexo-pwa` let Hexo sites have these two  capabilities.
 
 -  [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) - Users can add your site to mobile home screen
 - [Service Worker](https://developers.google.com/web/fundamentals/primers/service-workers/) - Make your site available offline
