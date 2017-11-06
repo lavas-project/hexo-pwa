@@ -2,6 +2,10 @@
   "name": "hexo-pwa",
   "version": "0.0.1",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lavas-project/hexo-pwa.git"
+  },
   "dependencies": {
     "lodash.template": "^4.4.0"
   }
