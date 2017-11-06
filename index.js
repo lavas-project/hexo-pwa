@@ -8,8 +8,8 @@
 /* globals hexo */
 const fs = require('fs');
 const path = require('path');
-
 const tpl = require('lodash.template');
+
 const manifestGenerator = require('./lib/manifest');
 const serviceWorkerGenerator = require('./lib/serviceWorker');
 

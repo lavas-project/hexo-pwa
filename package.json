@@ -1,6 +1,6 @@
 {
   "name": "hexo-pwa",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "dependencies": {
     "lodash.template": "^4.4.0"
