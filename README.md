@@ -1,5 +1,7 @@
 # hexo-pwa
 
+[![NPM version](https://badge.fury.io/js/hexo-pwa.svg)](http://badge.fury.io/js/hexo-pwa)
+
 Progressive Web Apps (PWA) plugin for [Hexo](https://hexo.io/).
 
 `hexo-pwa` let Hexo sites have these two  capabilities.
