@@ -54,9 +54,9 @@ pwa:
 		- urls: an array of the preload urls
 		- posts: the count of preload posts
   - opts: the options for [sw-toolbox](https://googlechromelabs.github.io/sw-toolbox/api.html#options)
-	- routes - request routes and strategies, based on [sw-toolbox](https://googlechromelabs.github.io/sw-toolbox/#main)
+	- routes - request routes and strategies, based on [sw-toolbox](https://googlechromelabs.github.io/sw-toolbox/#main). **The routes order does matter**.
 		- pattern: url pattern, this config can be express-style or RegExp
-		- strategy: the strategy you want to choose. [All strategies](https://googlechromelabs.github.io/sw-toolbox/api.html#options): `cacheFirst`, `networkFirst`, `cacheOnly`, `networkOnly`, `fastest`
+		- strategy: the strategy you want to choose. [All strategies](https://googlechromelabs.github.io/sw-toolbox/api.html#options): `cacheFirst`, `networkFirst`, `cacheOnly`, `networkOnly`, `fastest`. Caution: Log requests should use `networkOnly` strategy.
 
 ## License
 
