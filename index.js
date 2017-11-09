@@ -24,7 +24,7 @@ if (hexo.config.pwa.manifest) {
 
 if (hexo.config.pwa.serviceWorker) {
   // get sw register code and compile
-  let swTpl = fs.readFileSync(path.resolve(__dirname, './templates/swRegister.js.tpl'));
+  let swTpl = fs.readFileSync(path.resolve(__dirname, './templates/swRegister.tpl.js'));
   compiledSWRegTpl = tpl(swTpl)({path: hexo.config.pwa.serviceWorker.path + '?t=' + Date.now()});
   // generate service worker file
   hexo.extend.generator.register('serviceWorker', serviceWorkerGenerator);
@@ -32,7 +32,7 @@ if (hexo.config.pwa.serviceWorker) {
 
 if (hexo.config.pwa.asyncLoadPage) {
   // get async load page js tpl
-  asyncLoadPageJSTpl = fs.readFileSync(path.resolve(__dirname, './templates/asyncLoadPage.js.tpl'));
+  asyncLoadPageJSTpl = fs.readFileSync(path.resolve(__dirname, './templates/asyncLoadPage.tpl.js'));
 }
 
 

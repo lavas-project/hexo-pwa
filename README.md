@@ -34,7 +34,11 @@ pwa:
       urls:
         - /
       posts: 5
+    opts:
+      networkTimeoutSeconds: 5
     routes:
+      - pattern: !!js/regexp /hm.baidu.com/
+        strategy: networkOnly
       - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
         strategy: cacheFirst
       - pattern: !!js/regexp /\//
@@ -49,10 +53,10 @@ pwa:
 	- preload - urls or posts that you want to preload
 		- urls: an array of the preload urls
 		- posts: the count of preload posts
-	- routes - request routes and strategies, based on [Workbox](https://developers.google.com/web/tools/workbox/)
+  - opts: the options for [sw-toolbox](https://googlechromelabs.github.io/sw-toolbox/api.html#options)
+	- routes - request routes and strategies, based on [sw-toolbox](https://googlechromelabs.github.io/sw-toolbox/#main)
 		- pattern: url pattern, this config can be express-style or RegExp
-		- strategy: the strategy you want to choose. [All strategies](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-sw.Strategies): `cacheFirst`, `networkFirst`, `cacheOnly`, `networkOnly`, `staleWhileRevalidate`
-		- params: the parameters of chosen strategy
+		- strategy: the strategy you want to choose. [All strategies](https://googlechromelabs.github.io/sw-toolbox/api.html#options): `cacheFirst`, `networkFirst`, `cacheOnly`, `networkOnly`, `fastest`
 
 ## License
 
