@@ -49,7 +49,7 @@ pwa:
 	- path - the path of `manifest.json`, eg: `/manifest.json`
 	- body - the content of `manifest.json`,  [manifest.json example](https://developer.mozilla.org/en-US/docs/Web/Manifest), can be empty.
 - serviceWorker - service worker configuration
-	- path: the path of `sw.js`, eg: `/sw.js`
+	- path: the path of `sw.js`, eg: `/sw.js`, you shouldn't put sw.js in subdirectory because of the [service worker scope](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker#registration_and_scope)
 	- preload - urls or posts that you want to preload
 		- urls: an array of the preload urls
 		- posts: the count of preload posts
