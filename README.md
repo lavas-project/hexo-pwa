@@ -1,6 +1,7 @@
 # hexo-pwa
 
-[![NPM version](https://badge.fury.io/js/hexo-pwa.svg)](http://badge.fury.io/js/hexo-pwa)
+[![NPM version](https://badge.fury.io/js/hexo-pwa.svg)](http://badge.fury.io/js/hexo-pwa) [![NPM Downloads](https://img.shields.io/npm/dm/hexo-pwa.svg?maxAge=3600)](https://www.npmjs.com/package/hexo-pwa)
+
 
 Progressive Web Apps (PWA) plugin for [Hexo](https://hexo.io/).
 
