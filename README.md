@@ -50,7 +50,7 @@ pwa:
 
 - manifest - manifest configuration
 	- path - the path of `manifest.json`, eg: `/manifest.json`
-	- body - the content of `manifest.json`,  [manifest.json example](https://developer.mozilla.org/en-US/docs/Web/Manifest), can be empty.
+	- body - the content of `manifest.json`,  [manifest.json example](https://developer.mozilla.org/en-US/docs/Web/Manifest). `body` can be null, if not null, `hexo-pwa` will generate `manifest.json` with `JSON.stringify(body)`
 - serviceWorker - service worker configuration
 	- path: the path of `sw.js`, eg: `/sw.js`, you shouldn't put sw.js in subdirectory because of the [service worker scope](https://developers.google.com/web/ilt/pwa/introduction-to-service-worker#registration_and_scope)
 	- preload - urls or posts that you want to preload
