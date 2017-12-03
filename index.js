@@ -56,7 +56,7 @@ hexo.extend.filter.register('after_render:html', data => {
   }
 
   return data;
-});
+}, hexo.config.pwa.priority || 10);
 
 
 /**
