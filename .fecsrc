@@ -1,18 +1,16 @@
 {
   "eslint": {
     "env": {
-      "node": true,
-      "browser": true
+      "node": true
     },
 
     "globals": {
       "console": true,
-      "require": true,
-      "define": true
+      "require": true
     },
 
     "rules": {
-      "indent": ["error", 2],
+      "indent": [2, 2],
       "no-console": 0,
       "fecs-no-require": "off"
     }

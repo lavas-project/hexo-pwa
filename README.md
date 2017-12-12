@@ -7,7 +7,7 @@ Progressive Web Apps (PWA) plugin for [Hexo](https://hexo.io/).
 
 `hexo-pwa` let Hexo sites have these two  capabilities.
 
--  [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) - Users can add your site to mobile home screen
+- [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) - Users can add your site to mobile home screen
 - [Service Worker](https://developers.google.com/web/fundamentals/primers/service-workers/) - Make your site available offline
 
 ## Installation
@@ -57,7 +57,7 @@ pwa:
 	- preload - urls or posts that you want to preload
 		- urls: an array of the preload urls
 		- posts: the count of preload posts
-  - opts: the options for [sw-toolbox](https://googlechromelabs.github.io/sw-toolbox/api.html#options)
+    - opts: the options for [sw-toolbox](https://googlechromelabs.github.io/sw-toolbox/api.html#options)
 	- routes - request routes and strategies, based on [sw-toolbox](https://googlechromelabs.github.io/sw-toolbox/#main). **The routes order does matter**.
 		- pattern: url pattern, this config can be express-style or RegExp
 		- strategy: the strategy you want to choose. [All strategies](https://googlechromelabs.github.io/sw-toolbox/api.html#options): `cacheFirst`, `networkFirst`, `cacheOnly`, `networkOnly`, `fastest`. Caution: Log requests should use `networkOnly` strategy.
