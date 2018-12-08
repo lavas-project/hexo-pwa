@@ -11,6 +11,7 @@ const path = require('path');
 const tpl = require('lodash.template');
 
 const manifestGenerator = require('./lib/manifest');
+const swToolboxGenerator = require('./lib/sw-toolbox');
 const serviceWorkerGenerator = require('./lib/serviceWorker');
 
 let compiledSWRegTpl;
@@ -26,6 +27,8 @@ if (hexo.config.pwa.serviceWorker) {
   // get sw register code and compile
   let swTpl = fs.readFileSync(path.resolve(__dirname, './templates/swRegister.tpl.js'));
   compiledSWRegTpl = tpl(swTpl)({path: hexo.config.pwa.serviceWorker.path + '?t=' + Date.now()});
+  // generate sw-toolbox.js
+  hexo.extend.generator.register('sw-toolbox', swToolboxGenerator);
   // generate service worker file
   hexo.extend.generator.register('serviceWorker', serviceWorkerGenerator);
 }
