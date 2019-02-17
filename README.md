@@ -34,6 +34,7 @@ pwa:
         - src: /images/android-chrome-512x512.png
           sizes: 512x512
           type: image/png
+      start_url: /index.html
       theme_color: '#ffffff'
       background_color: '#ffffff'
       display: standalone
