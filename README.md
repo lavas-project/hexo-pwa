@@ -53,6 +53,8 @@ pwa:
         strategy: cacheFirst
       - pattern: !!js/regexp /\//
         strategy: networkFirst
+    # set console to `none` to hide all the setup messages or `error` to hide normal logs. (default: show all logs)
+    console: error
   priority: 5
 ```
 
