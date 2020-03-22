@@ -25,7 +25,10 @@ if (hexo.config.pwa.manifest) {
 if (hexo.config.pwa.serviceWorker) {
   // get sw register code and compile
   let swTpl = fs.readFileSync(path.resolve(__dirname, './templates/swRegister.tpl.js'));
-  compiledSWRegTpl = tpl(swTpl)({path: hexo.config.pwa.serviceWorker.path + '?t=' + Date.now()});
+  compiledSWRegTpl = tpl(swTpl)({
+    path: hexo.config.pwa.serviceWorker.path + '?t=' + Date.now(),
+    console: hexo.config.pwa.serviceWorker.console,
+  });
   // generate service worker file
   hexo.extend.generator.register('serviceWorker', serviceWorkerGenerator);
 }

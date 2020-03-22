@@ -53,6 +53,7 @@ pwa:
         strategy: cacheFirst
       - pattern: !!js/regexp /\//
         strategy: networkFirst
+    console: error
   priority: 5
 ```
 
@@ -68,6 +69,7 @@ pwa:
 	- routes - request routes and strategies, based on [sw-toolbox](https://googlechromelabs.github.io/sw-toolbox/#main). **The routes order does matter**.
 		- pattern: url pattern, this config can be express-style or RegExp
 		- strategy: the strategy you want to choose. [All strategies](https://googlechromelabs.github.io/sw-toolbox/api.html#options): `cacheFirst`, `networkFirst`, `cacheOnly`, `networkOnly`, `fastest`. Caution: Log requests should use `networkOnly` strategy.
+	- console: console log level, set to `none` to hide all the setup messages or `error` to hide normal logs. The default option is `all`(show all logs)
 - priority - [plugin priority](https://hexo.io/api/filter.html) (default value is 10)
 
 ## License
